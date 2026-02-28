@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Games Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Game Hub</h1>
+
+<div class="tabs">
+  <button onclick="openTab('t2048')">2048</button>
+  <button onclick="openTab('snake')">Snake</button>
+  <button onclick="openTab('clicker')">Clicker</button>
+</div>
+
+<!-- 2048 -->
+<div id="t2048" class="tabcontent">
+  <h2>2048</h2>
+  <div id="grid2048" class="grid"></div>
+</div>
+
+<!-- Snake -->
+<div id="snake" class="tabcontent" style="display:none">
+  <h2>Snake</h2>
+  <canvas id="snakeCanvas" width="400" height="400"></canvas>
+</div>
+
+<!-- Clicker -->
+<div id="clicker" class="tabcontent" style="display:none">
+  <h2>Clicker</h2>
+  <div class="clicker-container">
+    <div>Coins: <span id="coins">0</span></div>
+    <button id="clickBtn">Click!</button>
+    <h3>Upgrades</h3>
+    <button id="upgrade1">+1 per click (Cost: 20)</button>
+    <button id="upgrade2">Auto +1/sec (Cost: 50)</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
